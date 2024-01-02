@@ -8,7 +8,7 @@
 }
 html {
 	font-size: 62.5%;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
 }
 .wrapper {
@@ -46,10 +46,10 @@ html {
 	letter-spacing: 1px;
 	font-size: 3rem;
 	font-weight: 300;
-	margin-bottom: 2em;
+	margin: 2em 0;
 }
 .section {
-	padding: 5em 0;
+	padding: 2em 0 5em;
 }
 .fa-check {
 	color: $light-green;
@@ -172,6 +172,13 @@ html {
 	&__desription {
 		text-align: center;
 		font-size: 1.6rem;
+		a{
+			text-decoration: none;
+			cursor: pointer;
+			color: $light-green;
+			font-weight: 700;
+
+		}
 	}
 	&__boxes-wrap {
 		display: flex;

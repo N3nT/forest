@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
 <body>
-    <nav class="nav center">
+    <nav class="nav center" id="home">
         <div class="wrapper">
             <div class="logo center">
                 <p><i class="fa-solid fa-tree"></i> Forest</p>
@@ -19,8 +22,8 @@
                 <div class="nav__links">
                     <a href="#home" class="nav__link">Home</a>
                     <a href="#aboutus" class="nav__link">O nas</a>
-                    <a href="#offert" class="nav__link">Oferta</a>
-                    <a href="#contact" class="nav__link">Kontakt</a>
+                    <a href="#offers" class="nav__link">Oferta</a>
+                    <a href="contact.html" class="nav__link">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -63,7 +66,8 @@
         <section class="offers section" id="offers">
             <h2 class="section-title">oferta</h2>
             <div class="wrapper offers__wrapper">
-                <p class="offers__desription">Wybierz jedną z naszych wspaniałych ofert</p>
+                <p class="offers__desription">Wybierz jedną z naszych wspaniałych ofert!</p>
+                <p class="offers__desription"><a href="offers.html">Wszystkie oferty</a></p>
                 <div class="offers__boxes-wrap">
                     <div class="offers__box">
                         <p class="offers__box-title">Demo</p>
@@ -176,7 +180,9 @@
             </div>
         </div>
         <div class="line"></div>
-        <div class="footer__text"> <p>&#169; <span class="footer-year"></span> Forest Group Company Ltd.</p></div>
+        <div class="footer__text">
+            <p>&#169; <span class="footer-year"></span> Forest Group Company Ltd.</p>
+        </div>
     </footer>
     <script src="./dist/js/main.min.js"></script>
 </body>

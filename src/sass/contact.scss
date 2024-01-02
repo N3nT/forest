@@ -1,0 +1,50 @@
+@use './colors' as *;
+.header{
+    .hero-img{
+        background: url('../img/way-3793596_1280.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+.contact-section{
+    flex-direction: column;
+    padding-bottom: 10em;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        border: 1px solid $gray;
+        border-radius: 0.8em;
+        padding: 2em;
+        label{
+            font-size: 1.3rem;
+        }
+        input, textarea{
+            margin: 1em 0;
+            padding: 0.5em;
+        }
+        textarea{
+            resize: vertical;
+        }
+        button{
+            border: none;
+            position: relative;
+            border-radius: 0.4em;
+            outline: none;
+            background: $light-green;
+            padding: 0.5em;
+            width: 300px;
+            margin-top: 1em;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid transparent;
+            cursor: pointer;
+            &:hover{
+                background-color: $white;
+                border: 1px solid $black;
+            }
+        }
+    }
+}
