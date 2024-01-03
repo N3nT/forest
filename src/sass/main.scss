@@ -12,7 +12,7 @@ html {
 	scroll-behavior: smooth;
 }
 .wrapper {
-	width: 1000px;
+	//width: 1000px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -72,7 +72,8 @@ html {
 }
 .nav {
 	&__links {
-		display: flex;
+		//display: flex;//pc
+		display: none;
 		height: 100%;
 	}
 	&__link {
@@ -98,7 +99,7 @@ html {
 		opacity: 0.7;
 	}
 	.hero-img {
-		background-image: url('../img/jungle-1807476_1280.jpg');
+		background-image: url('../img/jungle-1807476_1920.jpg');
 		background-attachment: fixed;
 	}
 	&__text {
@@ -154,7 +155,7 @@ html {
 		padding: 1em 10em;
 	}
 	.hero-img {
-		background-image: url('../img/girl-5785590_1280.jpg');
+		background-image: url('../img/girl-5785590_1920.jpg');
 	}
 	.shadow {
 		opacity: 0.5;
@@ -234,7 +235,9 @@ html {
 }
 .footer {
 	background-color: #efefef;
-	height: 280px;
+	//height: 280px;
+	height: 100px;
+	font-size: 2rem;//m
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -251,6 +254,7 @@ html {
 .footer__desktop{
 	background-color: #efefef;
 	padding-top: 5em;
+	display: none;
 	.wrapper{
 		display: flex;
 		justify-content: space-between;

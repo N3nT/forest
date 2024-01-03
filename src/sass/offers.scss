@@ -1,1 +1,47 @@
 @use './colors' as *;
+.header {
+	.hero-img {
+		background: url('../img/wood-1868104_1280.jpg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+.offers {
+	.wrapper {
+		flex-wrap: wrap;
+	}
+	&__box {
+		width: 400px;
+		height: 500px;
+		margin: 5em;
+		background-color: #ffffff;
+		padding: 0;
+		opacity: 0.8;
+		transition: 0.3s;
+		&:hover {
+			scale: 1.1;
+			opacity: 1;
+		}
+		&-img {
+			width: 100%;
+			min-height: 250px;
+			background: url('../img/waters-3095682_1280.jpg');
+			background-position: center;
+			background-size: cover;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+			margin-bottom: 1em;
+		}
+		&-description {
+			text-align: center;
+			padding: 1em;
+			font-size: 1.5rem;
+		}
+		&-btn {
+			background-color: #ffffff;
+			margin-top: 0.5em;
+		}
+	}
+}
