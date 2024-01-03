@@ -98,7 +98,7 @@ html {
 		opacity: 0.7;
 	}
 	.hero-img {
-		background-image: url('../img/jungle-1807476_1920.jpg');
+		background-image: url('../img/jungle-1807476_1280.jpg');
 		background-attachment: fixed;
 	}
 	&__text {
@@ -124,7 +124,8 @@ html {
 		align-items: center;
 	}
 	&__img {
-		width: 50%;
+		width: 500px;
+		height: 300px;
 		padding-right: 5em;
 	}
 	&__text {
@@ -153,7 +154,7 @@ html {
 		padding: 1em 10em;
 	}
 	.hero-img {
-		background-image: url('../img/girl-5785590_1920.jpg');
+		background-image: url('../img/girl-5785590_1280.jpg');
 	}
 	.shadow {
 		opacity: 0.5;
@@ -271,7 +272,7 @@ html {
 			font-weight: 300;
 			a{
 				text-decoration: none;
-				color: #9b9b9b;
+				color: $gray;
 				&:hover{
 					color: #7e7e7e;
 				}
