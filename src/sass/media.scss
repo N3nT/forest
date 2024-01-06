@@ -1,0 +1,127 @@
+@mixin media-320px {
+	.header {
+		&__text {
+			&-heading {
+				font-size: 3rem;
+			}
+		}
+	}
+	.aboutus {
+		&__img {
+			width: 280px;
+			height: 200px;
+		}
+	}
+	.offers {
+		.swiper {
+			height: 400px;
+			padding: 1em;
+		}
+		&__box {
+			padding: 2em;
+		}
+	}
+}
+@mixin media-768px {
+	.aboutus {
+		&__img {
+			width: 400px;
+			height: 250px;
+		}
+	}
+	.banner {
+		&__text {
+			padding: 1em 2em;
+		}
+	}
+}
+@mixin media-992px {
+	.aboutus {
+		&__img {
+			width: 500px;
+			height: 300px;
+		}
+	}
+	.banner {
+		&__text {
+			padding: 1em 4em;
+		}
+		.hero-img {
+			background-image: url('../img/girl-5785590_1280.jpg');
+		}
+	}
+}
+@mixin media-1200px {
+	.wrapper {
+		width: 1000px;
+		justify-content: space-between;
+	}
+	.nav {
+        padding: 0;
+        .wrapper{
+            width: 1000px;
+        }
+		&__mobile-button {
+			display: none;
+		}
+		&__mobile {
+			display: none;
+		}
+		&__links {
+			display: flex;
+		}
+	}
+	.aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+		.wrapper {
+			flex-direction: row;
+            width: 1000px;
+		}
+		&__img {
+			padding-right: 5em;
+		}
+		&__text {
+			width: 50%;
+		}
+	}
+	.banner {
+		&__text {
+			padding: 1em 10em;
+		}
+        .hero-img{
+            background-image: url('../img/girl-5785590_1920.jpg');
+        }
+	}
+    .offers{
+        &__box{
+            height: 400px;
+            width: 500px;
+            padding: 4em;
+            &-title{
+                font-size: 2.5rem;
+            }
+            &-list{
+                margin: 3em 0;
+                &-item{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &__boxes-wrap{
+            display: none;
+            &--desktop{
+                margin-top: 5em;
+                display: flex;
+            }
+        }
+    }
+	.footer {
+		height: 300px;
+        font-size: 1.3rem;
+	}
+	.footer__desktop {
+		display: flex;
+	}
+}
