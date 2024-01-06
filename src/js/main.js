@@ -5,13 +5,12 @@ const mobileNavItems = document.querySelectorAll('.nav__mobile-item')
 const body = document.querySelector('body')
 
 const mobileNavHandler = () => {
-	console.log('gut')
-  body.classList.add('fixed-position')
+	body.classList.add('nav-open')
 	mobileNav.classList.add('nav__mobile--active')
 	mobileNavItems.forEach((item) => {
 		item.addEventListener('click', () => {
 			mobileNav.classList.remove('nav__mobile--active')
-			body.classList.remove('fixed-position')
+			body.classList.remove('nav-open')
 		})
 	})
 }
