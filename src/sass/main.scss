@@ -268,11 +268,6 @@ html {
 		border-radius: 8px;
 		padding: 5em;
 		margin: 0 4em;
-		transition: background-color 0.3s, scale 0.3s;
-		&:hover{
-			background-color: #e9e9e9;
-			scale: 0.98;
-		}
 		&-title {
 			font-size: 2rem;
 		}
@@ -302,6 +297,7 @@ html {
 			box-shadow: 0px 4px 10px 1px rgba(204, 204, 204, 1);
 			border-radius: 8px;
 			cursor: pointer;
+			color: $black;
 			transition: background-color 0.3s, color 0.3s;
 			&:hover {
 				background-color: $black;

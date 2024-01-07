@@ -1,50 +1,142 @@
 @use './colors' as *;
-.header{
-    .hero-img{
-        background: url('../img/way-3793596_1280.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+section {
+	margin-bottom: 4em;
 }
-.contact-section{
-    flex-direction: column;
-    padding-bottom: 10em;
-    &__form{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        border: 1px solid $gray;
-        border-radius: 0.8em;
-        padding: 2em;
-        label{
-            font-size: 1.3rem;
-        }
-        input, textarea{
-            margin: 1em 0;
-            padding: 0.5em;
-        }
-        textarea{
-            resize: vertical;
-        }
-        button{
-            border: none;
-            position: relative;
-            border-radius: 0.4em;
-            outline: none;
-            background: $light-green;
-            padding: 0.5em;
-            width: 300px;
-            margin-top: 1em;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 1px solid transparent;
-            cursor: pointer;
-            &:hover{
-                background-color: $white;
-                border: 1px solid $black;
-            }
-        }
-    }
+.section-title {
+	font-size: 2.5rem;
+}
+.header {
+	.hero-img {
+		background: url('../img/way-3793596_640.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+.contact-info {
+	flex-direction: column;
+	&__text {
+		padding: 1.8em;
+		border: 1px solid $gray;
+		border-radius: 0.8em;
+		font-size: 2rem;
+		line-height: 1.8em;
+		i {
+			margin-right: 0.5em;
+		}
+	}
+}
+.contact-section {
+	flex-direction: column;
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		border: 1px solid $gray;
+		border-radius: 0.8em;
+		padding: 2em;
+		label {
+			font-size: 1.4rem;
+		}
+		input,
+		textarea {
+			margin: 1em 0;
+			padding: 0.5em;
+			border: 1px solid $gray;
+		}
+		textarea {
+			resize: vertical;
+		}
+		button {
+			border: none;
+			box-shadow: 0px 4px 10px 1px rgba(204, 204, 204, 1);
+			position: relative;
+			border-radius: 0.4em;
+			outline: none;
+			padding: 0.5em;
+			width: 100px;
+			margin-top: 1em;
+			left: 50%;
+			transform: translateX(-50%);
+			border: 1px solid transparent;
+			cursor: pointer;
+			background-color: $white;
+			color: $black;
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				background-color: $black;
+				color: $white;
+			}
+		}
+	}
+}
+.contact-map {
+	flex-direction: column;
+	margin-bottom: 6em;
+}
+
+@media (min-width: 300px) {
+	.contact-info {
+		&__text {
+			padding: 1.6em;
+			font-size: 1.7rem;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		.hero-img {
+			background: url(../img/way-3793596_1280.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	}
+	.contact-info {
+		&__text {
+			text-align: center;
+			font-size: 2rem;
+			width: 500px;
+		}
+	}
+	.contact-section {
+		&__form {
+			width: 500px;
+		}
+	}
+	.contact-map {
+		iframe {
+			width: 500px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.contact-info {
+		&__text {
+			width: 700px;
+		}
+	}
+	.contact-section {
+		&__form {
+			width: 700px;
+		}
+	}
+	.contact-map {
+		iframe {
+			width: 700px;
+			height: 500px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		justify-content: center;
+	}
+	.nav {
+		.wrapper {
+			justify-content: space-between;
+		}
+	}
 }
