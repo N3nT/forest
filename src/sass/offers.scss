@@ -1,7 +1,12 @@
 @use './colors' as *;
+@mixin background($url) {
+	background: url($url);
+	background-position: center;
+	background-size: cover;
+}
 .header {
 	.hero-img {
-		background: url('../img/wood-1868104_1280.jpg');
+		background: url('../img/wood-1868104_640.jpg');
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: cover;
@@ -11,37 +16,108 @@
 .offers {
 	.wrapper {
 		flex-wrap: wrap;
+		align-items: center;
 	}
 	&__box {
-		width: 400px;
+		width: 300px;
 		height: 500px;
-		margin: 5em;
+		margin: 5em 0;
 		background-color: #ffffff;
 		padding: 0;
 		opacity: 0.8;
 		transition: 0.3s;
 		&:hover {
-			scale: 1.1;
+			scale: 1.02;
 			opacity: 1;
 		}
 		&-img {
 			width: 100%;
 			min-height: 250px;
-			background: url('../img/waters-3095682_1280.jpg');
-			background-position: center;
-			background-size: cover;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 			margin-bottom: 1em;
+			&--box-one {
+				@include background('../img/waters-3095682_640.jpg');
+			}
+			&--box-two {
+				@include background('../img/hut-5026879_640.jpg');
+			}
+			&--box-three {
+				@include background('../img/california-4053982_640.jpg');
+			}
+			&--box-four {
+				@include background('../img/black-forest-3869476_640.jpg');
+			}
+			&--box-five {
+				@include background('../img/larch-2938586_640.jpg');
+			}
+			&--box-six {
+				@include background('../img/question-mark-3255136_640.jpg');
+			}
 		}
 		&-description {
 			text-align: center;
 			padding: 1em;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 		&-btn {
 			background-color: #ffffff;
 			margin-top: 0.5em;
+		}
+	}
+}
+
+@media (min-width: 320px) {
+	.offers {
+		&__box {
+			width: 280px;
+			height: 510px;
+		}
+	}
+}
+
+@media (min-width: 375px) {
+	.offers {
+		&__box {
+			width: 320px;
+			height: 540px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.offers {
+		&__box {
+			width: 400px;
+			&-description {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		.hero-img {
+			background: url('../img/wood-1868104_1280.jpg');
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.offers {
+		&__box {
+			width: 450px;
+			height: 495px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.offers {
+		.wrapper {
+			flex-direction: row;
 		}
 	}
 }
