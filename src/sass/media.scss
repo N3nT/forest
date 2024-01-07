@@ -22,6 +22,17 @@
 		}
 	}
 }
+@mixin media-320px-min{
+	.offers {
+		.swiper {
+			height: 400px;
+			padding: 1em;
+		}
+		&__box {
+			padding: 2em;
+		}
+	}
+}
 @mixin media-768px {
 	.header {
 		.hero-img {
@@ -90,6 +101,7 @@
 		}
 		&__img {
 			padding-right: 5em;
+			margin-bottom: 0;
 		}
 		&__text {
 			width: 50%;
