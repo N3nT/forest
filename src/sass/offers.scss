@@ -24,12 +24,6 @@
 		margin: 5em 0;
 		padding: 0;
 		background-color: $white;
-		opacity: 0.8;
-		transition: 0.3s;
-		&:hover {
-			scale: 1.02;
-			opacity: 1;
-		}
 		&-img {
 			width: 100%;
 			min-height: 250px;
