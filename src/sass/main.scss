@@ -79,6 +79,7 @@ html {
 .nav {
 	position: relative;
 	padding: 1em;
+	width: 100vw;
 	.wrapper {
 		width: 100%;
 		align-items: center;
@@ -94,6 +95,7 @@ html {
 			padding: 0.5em;
 			font-size: 4rem;
 			color: $black;
+			width: 75px;
 		}
 	}
 	&__mobile {
