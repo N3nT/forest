@@ -4,6 +4,9 @@ const mobileNav = document.querySelector('.nav__mobile')
 const mobileNavItems = document.querySelectorAll('.nav__mobile-item')
 const body = document.querySelector('body')
 
+AOS.init({
+	once: true,
+})
 const mobileNavHandler = () => {
 	body.classList.toggle('nav-open')
 	mobileNav.classList.toggle('nav__mobile--active')

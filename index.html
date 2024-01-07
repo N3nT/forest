@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forest Group | Parki w Twojej okolicy</title>
+    <link rel="shortcut icon" href="./dist/img/pine-tree.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous" async></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
@@ -41,8 +43,8 @@
     <header class="header">
         <div class="header__text">
             <div class="wrapper">
-                <p class="header__text-name">Forest Group</p>
-                <h1 class="header__text-heading">Najpiękniejszy park w Twojej okolicy!</h1>
+                <p class="header__text-name" data-aos="fade-right" data-aos-delay="100">Forest Group</p>
+                <h1 class="header__text-heading" data-aos="fade-right" data-aos-delay="400">Najpiękniejszy park w Twojej okolicy!</h1>
             </div>
         </div>
         <div class="hero-img"></div>
@@ -53,7 +55,7 @@
             <h2 class="section-title">O NAS</h2>
             <div class="wrapper">
                 <img class="aboutus__img" src="./dist/img/waters-3095682_640.jpg"
-                    alt="Kamień na środku jeziora na którym rośnie krzew">
+                    alt="Kamień na środku jeziora na którym rośnie krzew" data-aos="fade-right" data-aos-delay="50">
                 <div class="aboutus__text">
                     <h3>Niezapomniane przygody</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -167,7 +169,7 @@
                     </div>
                 </div>
                 <div class="offers__boxes-wrap--desktop">
-                    <div class="offers__box">
+                    <div class="offers__box" data-aos="zoom-in" data-aos-delay="300">
                         <p class="offers__box-title">Demo</p>
                         <span class="offers__box-price">$0</span>
                         <ul class="offers__box-list">
@@ -195,7 +197,7 @@
                         </ul>
                         <button class="offers__box-btn">Wybierz</button>
                     </div>
-                    <div class="offers__box">
+                    <div class="offers__box" data-aos="zoom-in" data-aos-delay="100">
                         <p class="offers__box-title">Standard</p>
                         <span class="offers__box-price">$99</span>
                         <ul class="offers__box-list">
@@ -221,7 +223,7 @@
                         </ul>
                         <button class="offers__box-btn">Wybierz</button>
                     </div>
-                    <div class="offers__box">
+                    <div class="offers__box" data-aos="zoom-in" data-aos-delay="350">
                         <p class="offers__box-title">Premium</p>
                         <span class="offers__box-price">$299</span>
                         <ul class="offers__box-list">
@@ -288,6 +290,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/js/swiper.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
 </body>
