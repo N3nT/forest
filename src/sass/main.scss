@@ -17,8 +17,8 @@ html {
 	width: 100%;
 }
 .nav-open {
+	overflow: hidden;
 	position: fixed;
-	overflow-y: scroll;
 }
 .center {
 	display: flex;
@@ -84,8 +84,8 @@ html {
 	}
 
 	&__mobile-button {
-		position: absolute;
-		right: 2em;
+		position: fixed;
+		right: 20px;
 		background: transparent;
 		border: none;
 		z-index: 99;
