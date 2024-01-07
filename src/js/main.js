@@ -7,6 +7,7 @@ const body = document.querySelector('body')
 AOS.init({
 	once: true,
 })
+
 const mobileNavHandler = () => {
 	body.classList.toggle('nav-open')
 	mobileNav.classList.toggle('nav__mobile--active')
@@ -26,7 +27,7 @@ const mobileNavHandler = () => {
 	})
 }
 
-const setYear = (params) => {
+const setYear = () => {
 	const date = new Date()
 	footerYear.textContent = date.getFullYear()
 }

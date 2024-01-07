@@ -22,8 +22,8 @@
 		width: 300px;
 		height: 500px;
 		margin: 5em 0;
-		background-color: #ffffff;
 		padding: 0;
+		background-color: $white;
 		opacity: 0.8;
 		transition: 0.3s;
 		&:hover {
@@ -33,9 +33,9 @@
 		&-img {
 			width: 100%;
 			min-height: 250px;
+			margin-bottom: 1em;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
-			margin-bottom: 1em;
 			&--box-one {
 				@include background('../img/waters-3095682_640.jpg');
 			}
@@ -56,13 +56,13 @@
 			}
 		}
 		&-description {
-			text-align: center;
 			padding: 1em;
 			font-size: 1.3rem;
+			text-align: center;
 		}
 		&-btn {
-			background-color: #ffffff;
 			margin-top: 0.5em;
+			background-color: $white;
 		}
 	}
 }

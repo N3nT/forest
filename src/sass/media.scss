@@ -23,6 +23,15 @@
 	}
 }
 @mixin media-768px {
+	.header {
+		.hero-img {
+			background: url('../img/jungle-1807476_1280.jpg');
+			background-attachment: fixed;
+			background-position: bottom;
+			background-size: cover;
+			background-position: center;
+		}
+	}
 	.aboutus {
 		&__img {
 			width: 400px;

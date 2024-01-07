@@ -34,9 +34,9 @@ section {
 		display: flex;
 		flex-direction: column;
 		width: 350px;
+		padding: 2em;
 		border: 1px solid $gray;
 		border-radius: 0.8em;
-		padding: 2em;
 		label {
 			font-size: 1.4rem;
 		}
@@ -51,19 +51,19 @@ section {
 		}
 		button {
 			border: none;
-			box-shadow: 0px 4px 10px 1px rgba(204, 204, 204, 1);
 			position: relative;
-			border-radius: 0.4em;
-			outline: none;
-			padding: 0.5em;
-			width: 100px;
-			margin-top: 1em;
 			left: 50%;
 			transform: translateX(-50%);
+			width: 100px;
+			padding: 0.5em;
+			margin-top: 1em;
+			box-shadow: 0px 4px 10px 1px $shadow;
+			border-radius: 0.4em;
+			outline: none;
 			border: 1px solid transparent;
-			cursor: pointer;
 			background-color: $white;
 			color: $black;
+			cursor: pointer;
 			transition: background-color 0.3s, color 0.3s;
 			&:hover {
 				background-color: $black;
@@ -73,8 +73,8 @@ section {
 	}
 }
 .contact-map {
-	flex-direction: column;
 	margin-bottom: 6em;
+	flex-direction: column;
 }
 
 @media (min-width: 300px) {
@@ -97,9 +97,9 @@ section {
 	}
 	.contact-info {
 		&__text {
+			width: 500px;
 			text-align: center;
 			font-size: 2rem;
-			width: 500px;
 		}
 	}
 	.contact-section {

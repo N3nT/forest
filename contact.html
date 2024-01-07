@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous" async></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link rel="stylesheet" href="./dist/css/contact.min.css">
@@ -22,7 +22,7 @@
             <div class="logo center">
                 <p><i class="fa-solid fa-tree"></i> Forest</p>
             </div>
-            <button class="nav__mobile-button">
+            <button class="nav__mobile-button" aria-label="Przycisk otwierajacy nawigacje mobilna">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="nav__mobile">
@@ -58,7 +58,8 @@
                 <div class="contact-info__text">
                     <p class="contact-info__text-email"><i class="fa-solid fa-envelope"></i>contact@forestgroup.com</p>
                     <p class="contact-info__text-number"><i class="fa-solid fa-phone"></i>123 123 123</p>
-                    <p class="contact-info__text-addres"><i class="fa-solid fa-map-location-dot"></i>ul.Jasnogórskiej 2, Kraków</p>
+                    <p class="contact-info__text-addres"><i class="fa-solid fa-map-location-dot"></i>ul.Jasnogórskiej 2,
+                        Kraków</p>
                 </div>
             </div>
         </section>
@@ -72,14 +73,17 @@
                     <input type="text" name="email">
                     <label for="message">Wiadomość:</label>
                     <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Wyślij</button>
+                    <button type="submit" aria-label="Wyślij">Wyślij</button>
                 </form>
             </div>
         </section>
         <section class="contact-map center">
             <h2 class="section-title">Nasza lokalizacja</h2>
             <div class="wrapper center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.1243067888593!2d19.892082122263368!3d50.088115217601555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1704636686952!5m2!1spl!2spl" width="350" height="450" style="border: 1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.1243067888593!2d19.892082122263368!3d50.088115217601555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1704636686952!5m2!1spl!2spl"
+                    width="350" height="450" style="border: 1px solid black;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -109,7 +113,9 @@
                         <li class="footer__desktop-list-item"><a href="#">Zarząd</a></li>
                     </ul>
                     <ul class="footer__desktop-list">
-                        <li class="footer__desktop-list-item"><h3 class="footer__desktop-list-title">Dokumenty</h3></li>
+                        <li class="footer__desktop-list-item">
+                            <h3 class="footer__desktop-list-title">Dokumenty</h3>
+                        </li>
                         <li class="footer__desktop-list-item"><a href="#">Wnioski</a></li>
                         <li class="footer__desktop-list-item"><a href="#">Rezerwacje</a></li>
                     </ul>
